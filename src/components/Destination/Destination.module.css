@@ -1,0 +1,147 @@
+.card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #e5e7eb;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.content {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+.pays {
+  font-size: 0.78rem;
+  color: #6b7280;
+  margin-top: 2px;
+  margin-bottom: 6px;
+}
+
+.description {
+  font-size: 0.82rem;
+  color: #374151;
+  margin-top: 6px;
+  margin-bottom: 8px;
+  line-height: 1.4;
+  background-color: #f8fafc;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border-left: 3px solid #f97316;
+}
+
+.prix {
+  margin-top: 6px;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #ea580c;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.btnDetails {
+  padding: 8px 12px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #17405a;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  text-align: center;
+}
+
+.btnDetails:hover {
+  background-color: #0f2a3c;
+}
+
+.btnDetails:active {
+  transform: scale(0.98);
+}
+
+.btnFavori {
+  padding: 8px 12px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #17405a;
+  background-color: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.btnFavori:hover {
+  background-color: #e2e8f0;
+  border-color: #94a3b8;
+}
+
+.btnFavoriActif {
+  background-color: #fef3c7;
+  color: #b45309;
+  border-color: #fcd34d;
+  font-weight: 700;
+}
+
+.btnFavoriActif:hover {
+  background-color: #fde68a;
+}
+
+.btnReset {
+  padding: 6px 10px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #64748b;
+  background-color: transparent;
+  border: 1px dashed #cbd5e1;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.btnReset:hover {
+  background-color: #f8fafc;
+  color: #334155;
+  border-color: #94a3b8;
+}
+
+.messageFavori {
+  font-size: 0.72rem;
+  color: #b45309;
+  background-color: #fffbeb;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #fef3c7;
+  text-align: center;
+}

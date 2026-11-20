@@ -7,7 +7,7 @@ function Header({ page, setPage }: Props) {
   const lien = (nom: string, label: string) => (
     <button
       onClick={() => setPage(nom)}
-      className={`hover:text-orange-400 ${
+      className={`hover:text-orange-400 transition-colors ${
         page === nom ? "text-orange-400 font-bold underline" : ""
       }`}
     >
@@ -16,11 +16,17 @@ function Header({ page, setPage }: Props) {
   );
 
   return (
-    <header className="bg-[#17405a] text-white px-5 py-4">
-      <h1 className="text-lg font-bold">✈️ Travel Agency</h1>
-      <nav className="mt-1 flex gap-3 text-sm">
+    <header className="bg-[#17405a] text-white px-5 py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+      <h1
+        className="text-xl font-bold cursor-pointer"
+        onClick={() => setPage("accueil")}
+      >
+        ✈️ Travel Agency
+      </h1>
+      <nav className="flex gap-4 text-sm font-medium">
         {lien("accueil", "Accueil")}
         {lien("destinations", "Destinations")}
+        {lien("reservation", "Réservation")}
         {lien("contact", "Contact")}
       </nav>
     </header>
